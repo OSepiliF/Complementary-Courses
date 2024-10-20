@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let contacts = [
+            {
+                name: "John Doe",
+                phone: "123-456-7890",
+                email: "john.doe@example.com"
+            },
+            {
+                name: "Jane Smith",
+                phone: "098-765-4321",
+                email: "jane.smith@example.com"
+            },
+            {
+                name: "Emily Johnson",
+                phone: "555-555-5555",
+                email: "emily.johnson@example.com"
+            }
+        ];
+
+        contacts.push({
+            name: "Maisie Haley",
+            phone: "0913 531 3030",
+            email: "risus.Quisque@urna.ca"
+        });
+
+        
+        console.log(`First contact: ${contacts[0].name} / ${contacts[0].phone} / ${contacts[0].email}`);
+
+        let novo_cont = contacts.length - 1; 
+        console.log(`Last contact: ${contacts[novo_cont].name} / ${contacts[novo_cont].phone} / ${contacts[novo_cont].email}`);
+    </script>
+</body>
+</html>
+

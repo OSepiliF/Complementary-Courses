@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(3.2.5)</title>
+</head>
+<body>
+    <script>
+        let contatos = [{
+                nome: "Maxwell Wright",
+                telefone: "(0191) 719 6495",
+                email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+            }, 
+            {
+                nome: "Raja Villarreal",
+                telefone: "0866 398 2895",
+                email: "posuere.vulputate@sed.com"
+            }, 
+            {
+                nome: "Helen Richards",
+                telefone: "0800 1111",
+                email: "libero@convallis.edu"
+            }
+        ];
+
+        let novo_nome = prompt("Digite o nome do novo contato:");
+        let novo_telefone = prompt("Digite o telefone do novo contato:");
+        let novo_email = prompt("Digite o email do novo contato:");
+
+        contatos.push({
+            nome: novo_nome,
+            telefone: novo_telefone,
+            email: novo_email
+        });
+
+        let last = contatos.length - 1;
+        console.log(`${contatos[0].nome} / ${contatos[0].telefone} / ${contatos[0].email}`);
+        console.log(`${contatos[last].nome} / ${contatos[last].telefone} / ${contatos[last].email}`);
+
+    </script>
+</body>
+</html>

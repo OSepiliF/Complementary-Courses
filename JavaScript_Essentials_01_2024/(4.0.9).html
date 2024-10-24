@@ -1,0 +1,62 @@
+<script>
+    let contatos = [{
+        name: "Maxwell Wright",
+        phone: "(0191) 719 6495",
+        email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+    }, {
+        name: "Raja Villarreal",
+        phone: "0866 398 2895",
+        email: "posuere.vulputate@sed.com"
+    }, {
+        name: "Helen Richards",
+        phone: "0800 1111",
+        email: "libero@convallis.edu"
+    }];
+
+    function mostrar_PrimeiroCont() {
+        if (contatos.length > 0) {
+            console.log("Primeiro Contato:", contatos[0]);
+        } else {
+            console.log("Nenhum contato disponível.");
+        }
+    }
+
+    function mostrar_UltimoCont() {
+        if (contatos.length > 0) {
+            console.log("Último Contato:", contatos[contatos.length - 1]);
+        } else {
+            console.log("Nenhum contato disponível.");
+        }
+    }
+
+    function addContato() {
+        let nome = prompt("Digite o nome do contato: ");
+        let tell = prompt("Digite o telefone do contato: ");
+        let email = prompt("Digite o e-mail do contato: ");
+
+        if (!nome || !tell || !email) {
+            console.log("Todos os campos são obrigatórios! ");
+            return; 
+        }
+
+        contatos.push({ nome: nome, tell: tell, email: email });
+        console.log("Contato adicionado:", { nome, tell, email });
+    }
+
+    function main() {
+        let action = prompt("Escolha uma ação: 'Primeiro', 'Último', 'Novo'").toLowerCase();
+
+        if (action === 'primeiro') {
+            mostrar_PrimeiroCont();
+        } else if (action === 'último' || action === 'ultimo') {
+            mostrar_UltimoCont();
+        } else if (action === 'novo') {
+            addContato();
+        } else {
+            console.log("Ação inválida. Por favor, escolha 'Primeiro', 'Último' ou 'Novo'.");
+        }
+    }
+
+    main();
+
+</script>

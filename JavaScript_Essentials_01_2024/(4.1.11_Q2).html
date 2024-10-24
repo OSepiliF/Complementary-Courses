@@ -1,0 +1,13 @@
+<script>
+    let num_1 = parseInt(prompt(('Digite o número inicial: ')));
+    let num_2 = parseInt(prompt(('Digite o número final: ')));
+    
+    if (num_1 >= num_2) {
+        for (let num = num_1; num >= num_2; num -= 10) {
+            console.log(num);
+        }
+
+    } else {
+        console.log('Erro!','O primeiro número deve ser maior que o último número.')
+    }
+</script>

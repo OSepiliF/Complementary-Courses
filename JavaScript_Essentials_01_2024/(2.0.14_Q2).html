@@ -1,47 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>(2.0.1_Q2)</title>
-</head>
-<body>
-    <h1>Florist Inventory</h1>
-    <script>
-        const rose_Price = 8;
-        const lily_Price = 10;
-        const tulip_Price = 2;
+<script>
+    const rose_Price = 8;
+    const lily_Price = 10;
+    const tulip_Price = 2;
 
-        let rose_Quantity = 70;
-        let lily_Quantity = 50;
-        let tulip_Quantity = 120;
+    let rose_Quantity = 70;
+    let lily_Quantity = 50;
+    let tulip_Quantity = 120;
 
-        let rose_Value = rose_Price * rose_Quantity;
-        let lily_Value = lily_Price * lily_Quantity;
-        let tulip_Value = tulip_Price * tulip_Quantity;
+    let rose_Value = rose_Price * rose_Quantity;
+    let lily_Value = lily_Price * lily_Quantity;
+    let tulip_Value = tulip_Price * tulip_Quantity;
 
-        let total = rose_Value + lily_Value + tulip_Value;
+    let total = rose_Value + lily_Value + tulip_Value;
 
-        console.log("Rose - unit price:", rose_Price, ", quantity:", rose_Quantity, ", value:", rose_Value);
-        console.log("Lily - unit price:", lily_Price, ", quantity:", lily_Quantity, ", value:", lily_Value);
-        console.log("Tulip - unit price:", tulip_Price, ", quantity:", tulip_Quantity, ", value:", tulip_Value);
-        console.log("Total: ", total);
+    console.log("Rose - unit price:", rose_Price, ", quantity:", rose_Quantity, ", value:", rose_Value);
+    console.log("Lily - unit price:", lily_Price, ", quantity:", lily_Quantity, ", value:", lily_Value);
+    console.log("Tulip - unit price:", tulip_Price, ", quantity:", tulip_Quantity, ", value:", tulip_Value);
+    console.log("Total: ", total);
 
-        rose_Quantity = rose_Quantity - 20;
-        lily_Quantity = lily_Quantity - 30;
+    rose_Quantity = rose_Quantity - 20;
+    lily_Quantity = lily_Quantity - 30;
 
-        rose_Value = rose_Price * rose_Quantity;
-        lily_Value = lily_Price * lily_Quantity;
-        tulip_Value = tulip_Price * tulip_Quantity;
+    rose_Value = rose_Price * rose_Quantity;
+    lily_Value = lily_Price * lily_Quantity;
+    tulip_Value = tulip_Price * tulip_Quantity;
 
-        total = rose_Value + lily_Value + tulip_Value;
+    total = rose_Value + lily_Value + tulip_Value;
 
-        console.log("Rose - unit price:", rose_Price, ", quantity:", rose_Quantity, ", value:", rose_Value);
-        console.log("Lily - unit price:", lily_Price, ", quantity:", lily_Quantity, ", value:", lily_Value);
-        console.log("Tulip - unit price:", tulip_Price, ", quantity:", tulip_Quantity, ", value:", tulip_Value);
-        console.log("Total: ", total);
+    console.log("Rose - unit price:", rose_Price, ", quantity:", rose_Quantity, ", value:", rose_Value);
+    console.log("Lily - unit price:", lily_Price, ", quantity:", lily_Quantity, ", value:", lily_Value);
+    console.log("Tulip - unit price:", tulip_Price, ", quantity:", tulip_Quantity, ", value:", tulip_Value);
+    console.log("Total: ", total);
 
-
-    </script>
-</body>
-</html>
+</script>

@@ -1,0 +1,63 @@
+<script>
+    let contatos = [{
+        name: "Maxwell Wright",
+        phone: "(0191) 719 6495",
+        email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+    }, {
+        name: "Raja Villarreal",
+        phone: "0866 398 2895",
+        email: "posuere.vulputate@sed.com"
+    }, {
+        name: "Helen Richards",
+        phone: "0800 1111",
+        email: "libero@convallis.edu"
+    }];
+
+    while (true) {
+        let escolha = prompt("Escolha uma ação:\n- primeiro (exibir o primeiro contato)\n- último (exibir o último contato)\n- todos (exibir todos os contatos)\n- novo (adicionar um novo contato)\n- sair (encerrar o programa)").toLowerCase();
+
+        if (escolha === 'sair') {
+            break;
+        }
+
+        switch (escolha) {
+            case 'primeiro':
+                if (contatos.length > 0) {
+                    alert(`Primeiro contato: ${contatos[0].name}, Telefone: ${contatos[0].phone}, Email: ${contatos[0].email}`);
+                } else {
+                    alert("A lista de contatos está vazia.");
+                }
+                break;
+
+            case ('último', 'ultimo'):
+                if (contatos.length > 0) {
+                    alert(`Último contato: ${contatos[contatos.length - 1].name}, Telefone: ${contatos[contatos.length - 1].phone}, Email: ${contatos[contatos.length - 1].email}`);
+                } else {
+                    alert("A lista de contatos está vazia.");
+                }
+                break;
+
+            case 'todos':
+                if (contatos.length > 0) {
+                    let listaContatos = contatos.map(contato => `${contato.name}, Telefone: ${contato.phone}, Email: ${contato.email}`).join("\n");
+                    alert("Lista de contatos:\n" + listaContatos);
+                } else {
+                    alert("A lista de contatos está vazia.");
+                }
+                break;
+
+            case 'novo':
+                let nome = prompt("Digite o nome do novo contato:");
+                let telefone = prompt("Digite o telefone do novo contato:");
+                let email = prompt("Digite o email do novo contato:");
+                contatos.push({ name: nome, phone: telefone, email: email });
+                alert(`Contato "${nome}" adicionado com sucesso!`);
+                break;
+
+            default:
+                alert("Ação inválida. Tente novamente.");
+        }
+    }
+
+    alert("Programa encerrado.");
+</script>

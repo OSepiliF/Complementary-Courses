@@ -1,0 +1,29 @@
+<script>
+    let filmes = []
+
+    while (true) {
+        let titulo = prompt('Digite o titulo: ')
+        let cassific = prompt('Digite a classificação do filme: ')
+
+        if (titulo === null || cassific === null) {
+            alert('Digite informações válidas.');
+            continue;
+        }
+
+        filmes.push({titulo: titulo, imdb: Number(cassific)});
+    }
+
+    console.log('Filmes com classificação menor que 7: ')
+    for (filme of filmes) {
+        if (filme.imdb < 7) {
+            console.log(`${filme.titulo} (${filme.imdb})`);
+        }
+    }
+
+    console.log('Filmes com classificção maior ou igual a 7: ')
+    for (filme of filmes) {
+        if (filme.imdb >= 7) {
+            console.log(`${filme.titulo} (${filme.imdb})`);
+        }
+    }
+</script>
